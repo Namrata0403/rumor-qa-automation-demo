@@ -1,4 +1,4 @@
-# Getting started with Rumor
+# Rumor - QA Automation Demo
 
 # Technical Evaluation Test For QA Engineer
 
@@ -76,5 +76,5 @@ As we know, Flaky tests are automated tests that exhibit both passing and failin
 
 ## Test Execution Recording Videos
 
-- **Test Execution through Eclipse**: [Watch the video here](https://drive.google.com/file/d/1-S93Pm0dTS6eN6XJVKg1d2ZYkPBu7g8A/view?usp=sharing)
-- **Test Execution through Maven commands**: [Watch the video here](https://drive.google.com/file/d/11ug3HpVXMhI2hCb0bONJPci3Vlg6ldi0/view?usp=sharing)
+- **Test Execution through Eclipse**: [Watch the video here](https://vimeo.com/933638517?share=copy)
+- **Test Execution through Maven commands**: [Watch the video here](https://vimeo.com/933638480?share=copy)
