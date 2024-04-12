@@ -6,7 +6,7 @@
 
 #### [Demo Video - Test Execution through Maven commands](https://vimeo.com/933638480?share=copy) 
 
-### Technologies Used
+### Tools & Technologies Used
 
 - Java Development Kit (JDK) (Version 17)
 - Maven Dependency management (3.0.0)
@@ -27,7 +27,7 @@ AGROWORLDS empowers SSI Agroworld, a leading agricultural commodities broker and
 - Maven - Dependency management: [Download Maven](https://maven.apache.org/download.cgi)
 - Selenium WebDriver - For browser automation: [Download Selenium](https://www.selenium.dev/downloads/)
 
-### Installation Steps (Windows)
+### Installation (Windows)
 #### Step 1:. **Clone the repository**
 git clone <repository-url>
 
@@ -58,17 +58,17 @@ As we know, Flaky tests are automated tests that exhibit both passing and failin
 
 **Common Causes and Proposed Solutions:**
 - **Cause 1:** Asynchronous operations can cause flaky tests if elements are interacted with before they're loaded.
-- **Solution:** Use explicit waits (e.g., WebDriverWait) to ensure elements are in the desired state before interaction.
+    - **Solution:** Use explicit waits (e.g., WebDriverWait) to ensure elements are in the desired state before interaction.
  ```java
  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
  wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("someElementId")));
  ```
 - **Cause 2:** UI changes (identifiers, layouts, styles) can break tests with fragile selectors.
-- **Solution:** Prioritize stable identifiers (id, data-test-id) and avoid complex XPath selectors. Collaborate with developers to ensure critical elements are identifiable for testing.
+    - **Solution:** Prioritize stable identifiers (id, data-test-id) and avoid complex XPath selectors. Collaborate with developers to ensure critical elements are identifiable for testing.
 - **Cause 3:** Test order dependencies can cause flakiness in parallel execution.
-- **Solution:** Design tests to be independent, avoiding reliance on specific execution order.
+    - **Solution:** Design tests to be independent, avoiding reliance on specific execution order.
 - **Cause 4:** Environmental differences (browsers, APIs, dependencies) can cause test flakiness.
-- **Solution:** Regularly update tests to reflect the application's current state. Integrate tests into CI for consistent execution.
+    - **Solution:** Regularly update tests to reflect the application's current state. Integrate tests into CI for consistent execution.
 
 ## Overall Contributions
 - Developed a robust data-driven test framework (Java, Selenium, TestNG) for AGROWORLD's app.
